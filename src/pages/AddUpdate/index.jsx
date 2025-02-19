@@ -24,9 +24,7 @@ const Index = () => {
   const navigate = useNavigate()
   const { id } = useParams()
   const [isPending, startTransition] = useTransition();
-  const { defaultData, searchTerm } = useSelector(state => state.userSlice)
-  console.log(searchTerm);
-
+  const { defaultData } = useSelector(state => state.userSlice)
 
   useEffect(() => {
     if (id) {
